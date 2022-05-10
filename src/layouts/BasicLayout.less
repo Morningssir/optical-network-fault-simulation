@@ -1,0 +1,38 @@
+.layout {
+  height: 100vh;
+  .header {
+    display: flex;
+    padding: 0 24px;
+    .logo {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 6px;
+    }
+  }
+  .main {
+    display: flex;
+    flex: 1 1 auto;
+    .sider {
+      background-color: #ffffff;
+      :global(.ant-menu-sub.ant-menu-inline) {
+        background-color: #fafafa;
+      }
+      :global(.ant-layout-sider-trigger) {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 16px;
+        background-color: #ffffff;
+        border-top: 1px solid #f0f0f0;
+      }
+    }
+    .breadcrumb {
+      margin-bottom: -16px;
+      padding: 16px;
+    }
+    .content {
+      display: flex;
+      flex: 1;
+      padding: 16px;
+    }
+  }
+}
