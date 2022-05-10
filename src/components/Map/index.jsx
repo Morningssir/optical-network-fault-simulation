@@ -143,6 +143,8 @@ const Map = (props) => {
   }, [dataSource]);
 
   useEffect(() => {
+    if (!itemSelection) return;
+
     const graph = graphRef.current;
 
     const clearStates = () => {
